@@ -1,0 +1,192 @@
+[gd_scene load_steps=5 format=3 uid="uid://bxqoug1h0rn0c"]
+
+[ext_resource type="Script" uid="uid://sulpgj5lbo1j" path="res://Scripts/pipe.gd" id="1_bepn3"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_sj7mh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bepn3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_78010"]
+
+[node name="pipes" type="Node2D"]
+script = ExtResource("1_bepn3")
+
+[node name="p1" type="StaticBody2D" parent="."]
+position = Vector2(1135, 321)
+scale = Vector2(4, 30)
+
+[node name="upRect" type="StaticBody2D" parent="p1"]
+position = Vector2(0, -13.1667)
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="p1/upRect"]
+scale = Vector2(20, 20)
+mesh = SubResource("BoxMesh_sj7mh")
+
+[node name="up" type="Area2D" parent="p1/upRect"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="p1/upRect/up"]
+shape = SubResource("RectangleShape2D_bepn3")
+
+[node name="downRect" type="StaticBody2D" parent="p1"]
+position = Vector2(0, 13.2333)
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="p1/downRect"]
+scale = Vector2(20, 20)
+mesh = SubResource("BoxMesh_sj7mh")
+
+[node name="down" type="Area2D" parent="p1/downRect"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="p1/downRect/down"]
+shape = SubResource("RectangleShape2D_bepn3")
+
+[node name="middle" type="Area2D" parent="p1"]
+position = Vector2(0, -13.1667)
+
+[node name="collisionbody" type="CollisionShape2D" parent="p1/middle"]
+position = Vector2(0, 13.1667)
+scale = Vector2(0.77, 0.345333)
+shape = SubResource("RectangleShape2D_78010")
+
+[node name="p2" type="StaticBody2D" parent="."]
+position = Vector2(1473, 383)
+scale = Vector2(4, 30)
+
+[node name="upRect" type="StaticBody2D" parent="p2"]
+position = Vector2(0, -13.1667)
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="p2/upRect"]
+scale = Vector2(20, 20)
+mesh = SubResource("BoxMesh_sj7mh")
+
+[node name="up" type="Area2D" parent="p2/upRect"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="p2/upRect/up"]
+shape = SubResource("RectangleShape2D_bepn3")
+
+[node name="downRect" type="StaticBody2D" parent="p2"]
+position = Vector2(0, 13.2333)
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="p2/downRect"]
+scale = Vector2(20, 20)
+mesh = SubResource("BoxMesh_sj7mh")
+
+[node name="down" type="Area2D" parent="p2/downRect"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="p2/downRect/down"]
+shape = SubResource("RectangleShape2D_bepn3")
+
+[node name="middle" type="Area2D" parent="p2"]
+position = Vector2(0, -13.1667)
+
+[node name="collisionbody" type="CollisionShape2D" parent="p2/middle"]
+position = Vector2(0, 13.1667)
+scale = Vector2(0.77, 0.345333)
+shape = SubResource("RectangleShape2D_78010")
+
+[node name="p3" type="StaticBody2D" parent="."]
+position = Vector2(1696, 264)
+scale = Vector2(4, 30)
+
+[node name="upRect" type="StaticBody2D" parent="p3"]
+position = Vector2(0, -13.1667)
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="p3/upRect"]
+scale = Vector2(20, 20)
+mesh = SubResource("BoxMesh_sj7mh")
+
+[node name="up" type="Area2D" parent="p3/upRect"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="p3/upRect/up"]
+shape = SubResource("RectangleShape2D_bepn3")
+
+[node name="downRect" type="StaticBody2D" parent="p3"]
+position = Vector2(0, 13.2333)
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="p3/downRect"]
+scale = Vector2(20, 20)
+mesh = SubResource("BoxMesh_sj7mh")
+
+[node name="down" type="Area2D" parent="p3/downRect"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="p3/downRect/down"]
+shape = SubResource("RectangleShape2D_bepn3")
+
+[node name="middle" type="Area2D" parent="p3"]
+position = Vector2(0, -13.1667)
+
+[node name="collisionbody" type="CollisionShape2D" parent="p3/middle"]
+position = Vector2(0, 13.1667)
+scale = Vector2(0.77, 0.345333)
+shape = SubResource("RectangleShape2D_78010")
+
+[node name="p4" type="StaticBody2D" parent="."]
+position = Vector2(1961, 279)
+scale = Vector2(4, 30)
+
+[node name="upRect" type="StaticBody2D" parent="p4"]
+position = Vector2(0, -13.1667)
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="p4/upRect"]
+scale = Vector2(20, 20)
+mesh = SubResource("BoxMesh_sj7mh")
+
+[node name="up" type="Area2D" parent="p4/upRect"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="p4/upRect/up"]
+shape = SubResource("RectangleShape2D_bepn3")
+
+[node name="downRect" type="StaticBody2D" parent="p4"]
+position = Vector2(0, 13.2333)
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="p4/downRect"]
+scale = Vector2(20, 20)
+mesh = SubResource("BoxMesh_sj7mh")
+
+[node name="down" type="Area2D" parent="p4/downRect"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="p4/downRect/down"]
+shape = SubResource("RectangleShape2D_bepn3")
+
+[node name="middle" type="Area2D" parent="p4"]
+position = Vector2(0, -13.1667)
+
+[node name="collisionbody" type="CollisionShape2D" parent="p4/middle"]
+position = Vector2(0, 13.1667)
+scale = Vector2(0.77, 0.345333)
+shape = SubResource("RectangleShape2D_78010")
+
+[node name="p5" type="StaticBody2D" parent="."]
+position = Vector2(2195, 361)
+scale = Vector2(4, 30)
+
+[node name="upRect" type="StaticBody2D" parent="p5"]
+position = Vector2(0, -13.1667)
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="p5/upRect"]
+scale = Vector2(20, 20)
+mesh = SubResource("BoxMesh_sj7mh")
+
+[node name="up" type="Area2D" parent="p5/upRect"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="p5/upRect/up"]
+shape = SubResource("RectangleShape2D_bepn3")
+
+[node name="downRect" type="StaticBody2D" parent="p5"]
+position = Vector2(0, 13.2333)
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="p5/downRect"]
+scale = Vector2(20, 20)
+mesh = SubResource("BoxMesh_sj7mh")
+
+[node name="down" type="Area2D" parent="p5/downRect"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="p5/downRect/down"]
+shape = SubResource("RectangleShape2D_bepn3")
+
+[node name="middle" type="Area2D" parent="p5"]
+position = Vector2(0, -13.1667)
+
+[node name="collisionbody" type="CollisionShape2D" parent="p5/middle"]
+position = Vector2(0, 13.1667)
+scale = Vector2(0.77, 0.345333)
+shape = SubResource("RectangleShape2D_78010")

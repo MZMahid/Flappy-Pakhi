@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://2vfkl5vjs6co"]
+
+[ext_resource type="Script" uid="uid://0mmc2o1lckh8" path="res://Scripts/menu.gd" id="1_5yleq"]
+[ext_resource type="Texture2D" uid="uid://mgnpvf78n66b" path="res://assets/bluebird-midflap.png" id="1_uubjt"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_5yleq")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 160.0
+offset_top = 300.0
+offset_right = 660.0
+offset_bottom = 340.0
+bbcode_enabled = true
+text = "[center][b][color=#ffcc00][font_size=32]Press Space button to Jump[/font_size][/color][/b][/center]
+"
+scroll_active = false
+
+[node name="Bluebird-midflap" type="Sprite2D" parent="."]
+position = Vector2(400, 472.5)
+scale = Vector2(2.5, 2.5)
+texture = ExtResource("1_uubjt")
